@@ -8,13 +8,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Utils {
+public class Naverfinance {
 
     public static final String DOMESTIC_QUOTES_BASE_URL = System.getProperty("naverfinance.baseurl.quotes.domestic", "https://polling.finance.naver.com/api/realtime/domestic/stock/{id}");
     public static final String FOREIGN_QUOTES_BASE_URL = System.getProperty("naverfinance.baseurl.quotes.foreign", "https://polling.finance.naver.com/api/realtime/worldstock/stock/{id}");
 
+    public static Stock get(String symbol) throws IOException {
+        return Naverfinance.get(symbol, false);
+    }
+
     public static Stock get(String symbol, boolean includeHistorical) throws IOException {
-        Map<String, Stock> result = Utils.getQuotes(symbol, includeHistorical);
+        Map<String, Stock> result = Naverfinance.getQuotes(symbol, includeHistorical);
 
         return result.get(symbol);
     }

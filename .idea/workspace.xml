@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d7090f97-35f3-4a80-99cb-9dd1829f7d54" name="Changes" comment="# &lt;type&gt;: &lt;subject&gt;&#10;##### Subject 50 characters ################# -&gt; |&#10;&#10;&#10;# Body Message&#10;######## Body 72 characters ####################################### -&gt; |&#10;&#10;# Issue Tracker Number or URL&#10;&#10;# --- COMMIT END ---&#10;# Type can be&#10;#   feat    : new feature&#10;#   fix     : bug fix&#10;#   refactor: refactoring production code&#10;#   style   : formatting, missing semi colons, etc; no code change&#10;#   docs    : changes to documentation&#10;#   test    : adding or refactoring tests&#10;#             no productin code change&#10;#   chore   : updating grunt tasks etc&#10;#             no production code change&#10;# ------------------&#10;# Remember me ~&#10;#   Capitalize the subject line&#10;#     제목줄은 대문자로 시작한다.&#10;#   Use the imperative mood in the subject line&#10;#     제목줄은 명령어로 작성한다.&#10;#   Do not end the subject line with a period&#10;#     제목줄은 마침표로 끝내지 않는다.&#10;#   Separate subject from body with a blank line&#10;#     본문과 제목에는 빈줄을 넣어서 구분한다.&#10;#   Use the body to explain what and why vs. how&#10;#     본문에는 &quot;어떻게&quot; 보다는 &quot;왜&quot;와 &quot;무엇을&quot; 설명한다.&#10;#   Can use multiple lines with &quot;-&quot; for bullet points in body&#10;#     본문에 목록을 나타낼때는 &quot;-&quot;로 시작한다.&#10;# ------------------">
+      <change afterPath="$PROJECT_DIR$/src/test/java/naverfinance/StockTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/naverfinance/Converters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/naverfinance/Converters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/naverfinance/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/naverfinance/Naverfinance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/naverfinance/quotes/stock/domestic/DomesticStockQuoteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/naverfinance/quotes/stock/domestic/DomesticStockQuoteRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/naverfinance/quotes/stock/foreign/ForeignStockQuoteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/naverfinance/quotes/stock/foreign/ForeignStockQuoteRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +50,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -87,13 +90,14 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="naverfinance" />
       <recent name="naverfinance.quotes.stock.domestic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="naverfinance.quotes.stock.foreign" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DomesticStockQuoteRequestTests.requestTest">
+  <component name="RunManager" selected="Gradle.StockTests.getStockTest">
     <configuration name="DomesticStockQuoteRequestTests.requestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -108,6 +112,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;naverfinance.quotes.stock.domestic.DomesticStockQuoteRequestTests.requestTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="StockTests.getStockTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;naverfinance.StockTests.getStockTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,6 +167,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.StockTests.getStockTest" />
         <item itemvalue="Gradle.DomesticStockQuoteRequestTests.requestTest" />
         <item itemvalue="Gradle./Users/zzun_ho9/sideProject/naverfinance-api [dependencies]" />
       </list>
@@ -156,7 +184,7 @@
       <workItem from="1666435252366" duration="4644000" />
       <workItem from="1666441440941" duration="3745000" />
       <workItem from="1666451550890" duration="4034000" />
-      <workItem from="1666514911550" duration="7561000" />
+      <workItem from="1666514911550" duration="7981000" />
     </task>
     <task id="LOCAL-00001" summary="# &lt;type&gt;: &lt;subject&gt;&#10;##### Subject 50 characters ################# -&gt; |&#10;Project settings&#10;&#10;# Body Message&#10;######## Body 72 characters ####################################### -&gt; |&#10;&#10;# Issue Tracker Number or URL&#10;&#10;# --- COMMIT END ---&#10;# Type can be&#10;#   feat    : new feature&#10;#   fix     : bug fix&#10;#   refactor: refactoring production code&#10;#   style   : formatting, missing semi colons, etc; no code change&#10;#   docs    : changes to documentation&#10;#   test    : adding or refactoring tests&#10;#             no productin code change&#10;#   chore   : updating grunt tasks etc&#10;#             no production code change&#10;# ------------------&#10;# Remember me ~&#10;#   Capitalize the subject line&#10;#     제목줄은 대문자로 시작한다.&#10;#   Use the imperative mood in the subject line&#10;#     제목줄은 명령어로 작성한다.&#10;#   Do not end the subject line with a period&#10;#     제목줄은 마침표로 끝내지 않는다.&#10;#   Separate subject from body with a blank line&#10;#     본문과 제목에는 빈줄을 넣어서 구분한다.&#10;#   Use the body to explain what and why vs. how&#10;#     본문에는 &quot;어떻게&quot; 보다는 &quot;왜&quot;와 &quot;무엇을&quot; 설명한다.&#10;#   Can use multiple lines with &quot;-&quot; for bullet points in body&#10;#     본문에 목록을 나타낼때는 &quot;-&quot;로 시작한다.&#10;# ------------------">
       <created>1666440705200</created>

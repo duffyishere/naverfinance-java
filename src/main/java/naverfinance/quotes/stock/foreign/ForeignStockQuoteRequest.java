@@ -2,7 +2,7 @@ package naverfinance.quotes.stock.foreign;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.extern.slf4j.Slf4j;
-import naverfinance.Utils;
+import naverfinance.Naverfinance;
 import naverfinance.Stock;
 import naverfinance.quotes.stock.StockQuoteRequest;
 
@@ -24,7 +24,7 @@ public class ForeignStockQuoteRequest extends StockQuoteRequest<Stock> {
 
     @Override
     protected URL getUrl(String symbol) throws IOException {
-        String url = Utils.FOREIGN_QUOTES_BASE_URL.replace("{id}", this.symbol);
+        String url = Naverfinance.FOREIGN_QUOTES_BASE_URL.replace("{id}", this.symbol);
 
         return new URL(url);
     }

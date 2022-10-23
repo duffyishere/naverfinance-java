@@ -2,7 +2,7 @@ package naverfinance.quotes.stock.domestic;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.extern.slf4j.Slf4j;
-import naverfinance.Utils;
+import naverfinance.Naverfinance;
 import naverfinance.Stock;
 import naverfinance.Converters;
 import naverfinance.quotes.stock.StockQuote;
@@ -64,7 +64,7 @@ public class DomesticStockQuoteRequest extends StockQuoteRequest<Stock> {
 
     @Override
     protected URL getUrl(String symbol) throws IOException {
-        String url = Utils.DOMESTIC_QUOTES_BASE_URL.replace("{id}", this.symbol);
+        String url = Naverfinance.DOMESTIC_QUOTES_BASE_URL.replace("{id}", this.symbol);
 
         return new URL(url);
     }
