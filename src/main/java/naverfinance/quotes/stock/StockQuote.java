@@ -1,8 +1,11 @@
 package naverfinance.quotes.stock;
 
+import lombok.ToString;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+@ToString
 public class StockQuote {
 
     private final String symbol;

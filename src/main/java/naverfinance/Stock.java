@@ -1,8 +1,10 @@
 package naverfinance;
 
+import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 import naverfinance.quotes.stock.StockQuote;
 
+// TODO: Division Domestic Stock and Foreign Stock
 @Slf4j
 public class Stock {
 
