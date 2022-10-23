@@ -49,16 +49,13 @@ public class Converters {
 
     public static LocalDateTime stringToLocalDateTime(String data) {
         LocalDateTime result = null;
-        Instant instant = Instant.parse(data);
-        log.info("Instant: {}", instant);
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss");
-        log.info("localTradedAt: {}", data);
 
         if (!Converters.isParseable(data))
             return result;
 
         try {
-            return LocalDateTime.parse(data, formatter);
+            return LocalDateTime.parse(data.substring(0, data.length() -6), formatter);
         }
         catch (Exception e) {
             log.warn("Failed to convert string to localdatetime. data: {}", data);

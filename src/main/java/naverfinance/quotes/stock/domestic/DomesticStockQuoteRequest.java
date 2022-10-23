@@ -57,7 +57,7 @@ public class DomesticStockQuoteRequest extends StockQuoteRequest<Stock> {
         quote.setHighPrice(Converters.stringToBigDecimal(node.get("highPrice").asText()));
         quote.setLowPrice(Converters.stringToBigDecimal(node.get("lowPrice").asText()));
         quote.setAccumulatedTradingVolume(Converters.stringToBigDecimal(node.get("accumulatedTradingVolume").asText()));
-//        quote.setLocalTradedAt(Converters.stringToLocalDateTime(node.get("localTradedAt").asText()));
+        quote.setLocalTradedAt(Converters.stringToLocalDateTime(node.get("localTradedAt").asText()));
 
         return quote;
     }
